@@ -39,6 +39,12 @@ public:
 	} 
 
 	void remove() {
+		// cek apakaah antrian kosong 
+		if (FRONT == -1) {
+			cout << "queue underflow\n";
+			return;
+		}
+		cout << "\n The element deleted from the queue is : " << queue_array[FRONT] << "\n";
 
 	}
 };
